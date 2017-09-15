@@ -4,17 +4,14 @@ class Program
 {
     static void Main()
     {
-        object[] myObjArray = { 2, 'b', 1000.05d, "Hello World" };
-        useParams(myObjArray);
-        useParams("IE.Tech.", "KMITL", 2017);
+        int val = 999;
+        refMethod(ref val);
+        Console.WriteLine(val);
         Console.ReadLine();
     }
 
-    static void useParams(params object[] list)
+    static void refMethod(ref int i)
     {
-        foreach (object o in list)
-            Console.Write(o + " ");
-        Console.WriteLine();
+        i = i + 1;
     }
 }
-
