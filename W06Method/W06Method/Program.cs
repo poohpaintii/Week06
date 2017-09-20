@@ -10,18 +10,23 @@ namespace W06Assignment
     {
         static void Main()
         {
-            int x;
-            Console.WriteLine("Enter Your Number : ");
-            x = int.Parse(Console.ReadLine());
-            if (OddEven(x) > 0) Console.WriteLine("Odd");
-            else Console.WriteLine("Even");
+            int B,L;
+            Console.WriteLine("Enter the Begining and the Lasting Number for finding the primed numbers of 7 : ");
+            B = int.Parse(Console.ReadLine());          
+            L = int.Parse(Console.ReadLine());
+            Console.WriteLine("{0}", (PrimeSeven(B, L)));
             Console.ReadKey();
         }
 
-        static int OddEven(int c)
+        static int PrimeSeven (int b,int l)
         {
-            c = c % 2;
-            return c;
+            int S = 1;
+            for (int i = b; i <= l; i++)
+            {
+                if (i % 7 == 0) S=i; 
+            }
+            return S; // ยังไม่ได้โว๊ยยยยยย ง่วงแล้วววววววววววววววววว 
+            
         }
 
     }
