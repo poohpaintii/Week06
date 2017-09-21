@@ -25,7 +25,7 @@ namespace W06Assignment
             {
                 if (i % 7 == 0) S=i; 
             }
-            return S; // ยังไม่ได้โว๊ยยยยยย ง่วงแล้วววววววววววววววววว 
+            return S;
             
         }
 
